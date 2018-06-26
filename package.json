@@ -1,0 +1,23 @@
+{
+  "name": "sampledatageneratorui",
+  "version": "1.0.0",
+  "description": "Angular app for generating random data in user defined formats.",
+  "main": "index.js",
+  "dependencies": {
+    "@angular/cli": "^6.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WireMonkey/SampleDataGeneratorUi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WireMonkey/SampleDataGeneratorUi/issues"
+  },
+  "homepage": "https://github.com/WireMonkey/SampleDataGeneratorUi#readme"
+}
