@@ -3,4 +3,20 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <div id="InputCard" style="width: 20rem;">
+    <p-card>
+      <p-header>
+        Add new column
+      </p-header>
+      <span class="ui-float-label">
+          <input id="float-input" type="text" size="30" pInputText pTooltip="Add column."> 
+          <label for="float-input">Column Name</label>
+      </span>
+      <p-autoComplete [suggestions]="results" (completeMethod)="filterBrands($event)" placeholder="data type." [dropdown]="true" pTooltip="The data type for the column"></p-autoComplete>
+      <p-footer>
+        <p-button  pTooltip="Add column." icon="fa fa-plus"></p-button>&nbsp;
+        <p-button pTooltip="Clear" icon="fa fa-undo"></p-button>
+      </p-footer>
+    </p-card>
+  </div>
 </div>
