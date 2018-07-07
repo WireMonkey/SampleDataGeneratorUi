@@ -11,10 +11,12 @@ import {DropdownModule} from 'primeng/dropdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
+import { ColumnCardComponent } from './column-card/column-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ColumnCardComponent
   ],
   imports: [
     BrowserModule,
