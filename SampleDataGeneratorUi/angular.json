@@ -26,7 +26,8 @@
               "src/styles.css",
               "../SampleDataGeneratorUi/node_modules/primeng/resources/themes/omega/theme.css",
               "../SampleDataGeneratorUi/node_modules/font-awesome/css/font-awesome.css",
-              "../SampleDataGeneratorUi/node_modules/primeng/resources/primeng.css"
+              "../SampleDataGeneratorUi/node_modules/primeng/resources/primeng.css",
+              "../SampleDataGeneratorUi/node_modules/primeicons/primeicons.css"
             ],
             "scripts": []
           },
