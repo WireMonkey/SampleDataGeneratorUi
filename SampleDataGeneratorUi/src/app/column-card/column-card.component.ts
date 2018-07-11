@@ -10,6 +10,7 @@ export class ColumnCardComponent implements OnInit {
   functionTypes: string[] = [ 'bool','ssn','firstName','lastName' ];
   results: string[];
   @Input() title: string;
+  @Input() showButtons: boolean;
 
   filterBrands(event) {
     this.results = [];
@@ -21,11 +22,17 @@ export class ColumnCardComponent implements OnInit {
     }
   }
 
-  constructor() { 
-    
+  shouldShowButtons() {
+    console.log(this.showButtons);
+     return this.showButtons;
+  }
+
+  constructor() {
+
   }
 
   ngOnInit() {
+    console.log(this.showButtons);
   }
 
 }
