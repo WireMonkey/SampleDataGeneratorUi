@@ -9,6 +9,7 @@ import {AutoCompleteModule} from 'primeng/autocomplete';
 import {TooltipModule} from 'primeng/tooltip';
 import {DropdownModule} from 'primeng/dropdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {OrderListModule} from 'primeng/orderlist';
 
 import { AppComponent } from './app.component';
 import { ColumnCardComponent } from './column-card/column-card.component';
@@ -28,7 +29,8 @@ import { ColumnCardComponent } from './column-card/column-card.component';
     AutoCompleteModule,
     TooltipModule,
     DropdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OrderListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

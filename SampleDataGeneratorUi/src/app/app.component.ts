@@ -12,13 +12,14 @@ interface City {
 })
 export class AppComponent {
   title = 'app';
-  functionTypes: string[] = [ 'bool','ssn','firstName','lastName' ];
+  functionTypes: City[] = [ {name:'bool',code:''},{name:'ssn',code:''},{name:'firstName',code:''},{name:'lastName',code:''} ];
+  test: string[];
   results: string[];
 
   filterBrands(event) {
     this.results = [];
-    for(let i = 0; i < this.functionTypes.length; i++) {
-        let brand = this.functionTypes[i];
+    for(let i = 0; i < this.test.length; i++) {
+        let brand = this.test[i];
         if(brand.toLowerCase().indexOf(event.query.toLowerCase()) == 0) {
             this.results.push(brand);
         }
