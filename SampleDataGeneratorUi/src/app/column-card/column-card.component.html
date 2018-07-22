@@ -3,10 +3,10 @@
       {{this.title}}
     </p-header>
     <span class="ui-float-label">
-        <input id="float-input" type="text" size="30" pInputText pTooltip="Add column.">
-        <label for="float-input">Column Name</label>
+        <input #floatInput type="text" size="30" pInputText pTooltip="Add column.">
+        <label for="floatInput">Column Name</label>
     </span>
-    <p-autoComplete [suggestions]="results" (completeMethod)="filterBrands($event)" placeholder="data type." [dropdown]="true" pTooltip="The data type for the column"></p-autoComplete>
+    <p-autoComplete #itemDrop [suggestions]="results" (completeMethod)="filterBrands($event)" placeholder="data type." [dropdown]="true" pTooltip="The data type for the column"></p-autoComplete>
     <p-footer>
       <div *ngIf="shouldShowButtons()" >
         <p-button  pTooltip="Add column." icon="fa fa-plus"></p-button>&nbsp;

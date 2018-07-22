@@ -11,6 +11,8 @@ export class ColumnCardComponent implements OnInit {
   results: string[];
   @Input() title: string;
   @Input() showButtons: boolean;
+  cardName: string;
+  cardType: string;
 
   filterBrands(event) {
     this.results = [];
@@ -27,12 +29,18 @@ export class ColumnCardComponent implements OnInit {
      return this.showButtons;
   }
 
+  updateCardValues(name: string, type: string) {
+    this.cardName = name;
+    this.cardType = type;
+  }
+
   constructor() {
 
   }
 
   ngOnInit() {
-    console.log(this.showButtons);
+    this.cardName = "test";
+    this.cardType = "test";
   }
 
 }
